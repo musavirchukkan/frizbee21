@@ -508,19 +508,19 @@
 									<time>4:00 pm - 6:00 pm</time>
 								</div>
 								<div class="col-md-10">
-									<!-- <div class="speaker">
+									 <div class="speaker">
 										<img
-											src="assets/img/speakers/2.jpg"
-											alt="Hubert Hirthe"
+											src="assets/img/speakers/shakeel.png"
+											alt="Shakeel Ahamad"
 										/>
-									</div> -->
+									</div>
 									<h4>
-										Ice Breaking Section.
+										Ice Breaking Session. <span>Shakeel Ahamad</span>
 										
 									</h4>
-									<!-- <p>
-										dfdddddd
-									</p> -->
+									<p>
+										Entertainer
+									</p> 
 								</div>
 							</div>
 
@@ -529,26 +529,26 @@
 									<time>6:00 pm - 8:00 pm</time>
 								</div>
 								<div class="col-md-10">
-									<!-- <div class="speaker">
+									<div class="speaker">
 										<img
-											src="assets/img/speakers/3.jpg"
-											alt="Cole Emmerich"
+											src="assets/img/speakers/valmakry.png"
+											alt="valmakry"
 										/>
 										
 									</div>
 									<div class="speaker">
 										<img
-											src="assets/img/speakers/3.jpg"
-											alt="Cole Emmerich"
+											src="assets/img/speakers/kyatgirl.png"
+											alt="Kyatgirl"
 										/>
 										
-									</div> -->
+									</div> 
 									<h4>
-										Travalog.
+										Travelogue.
 										<span>Valmakry & Kyatgirl</span>
 									</h4>
 									<p>
-										youtubers.
+										youtubers & Social media Influencers.
 									</p>
 								</div>
 							</div>
@@ -754,7 +754,7 @@
 							</div>
 							<div class="col-md-10">
 								
-									<h4>Group Photo Section</h4>
+									<h4>Group Photo Session</h4>
 								
 							</div>
 						</div>
@@ -1531,7 +1531,7 @@
 										Early Bird
 									</h5>
 									<h6 class="card-price text-center">
-										₹ 1600
+										Sold Out
 									</h6>
 									<hr />
 									<ul class="fa-ul">
@@ -1603,8 +1603,7 @@
 										IEEE Members
 									</h5>
 									<h6 class="card-price text-center">
-										<!-- ₹ 1800 -->
-										Coming Soon
+										<p id='demo'></p>
 									</h6>
 									<hr />
 									<ul class="fa-ul">
@@ -1677,8 +1676,7 @@
 										Non-IEEE Members
 									</h5>
 									<h6 class="card-price text-center">
-										<!-- ₹ 2000 -->
-										Coming Soon
+										<p id='demo2'></p>
 									</h6>
 									<hr />
 									<ul class="fa-ul">
@@ -1931,7 +1929,7 @@
 								MES College of Engineering <br />
 								Kuttippuram, Kerala<br />
 								India <br />
-								<strong>Phone:</strong> +91 96569064535<br />
+								<strong>Phone:</strong> +91 9656906453<br />
 								<strong>Email:</strong>
 								info@ieeesbmesce.org<br />
 							</p>
@@ -2003,5 +2001,63 @@
 
 		<!-- Template Main JS File -->
 		<script src="assets/js/main.js"></script>
+		<script>
+			// Set the date we're counting down to
+			var countDownDate = new Date("Dec 3, 2021 19:00:00").getTime();
+			
+			// Update the count down every 1 second
+			var x = setInterval(function() {
+			
+			  // Get today's date and time
+			  var now = new Date().getTime();
+				
+			  // Find the distance between now and the count down date
+			  var distance = countDownDate - now;
+				
+			  // Time calculations for days, hours, minutes and seconds
+			  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+			  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+			  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+			  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+				
+			  // Output the result in an element with id="demo"
+			  document.getElementById("demo").innerHTML = hours + "h "
+			  + minutes + "m " + seconds + "s ";
+				
+			  // If the count down is over, write some text 
+			  if (distance < 0) {
+				clearInterval(x);
+				document.getElementById("demo").innerHTML = "EXPIRED";
+			  }
+			}, 1000);
+			// Set the date we're counting down to
+			var countDownDate = new Date("Dec 3, 2021 19:00:00").getTime();
+			
+			// Update the count down every 1 second
+			var x = setInterval(function() {
+			
+			  // Get today's date and time
+			  var now = new Date().getTime();
+				
+			  // Find the distance between now and the count down date
+			  var distance = countDownDate - now;
+				
+			  // Time calculations for days, hours, minutes and seconds
+			  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+			  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+			  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+			  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+				
+			  // Output the result in an element with id="demo"
+			  document.getElementById("demo2").innerHTML = hours + "h "
+			  + minutes + "m " + seconds + "s ";
+				
+			  // If the count down is over, write some text 
+			  if (distance < 0) {
+				clearInterval(x);
+				document.getElementById("demo2").innerHTML = "EXPIRED";
+			  }
+			}, 1000);
+			</script>
 	</body>
 </html>
